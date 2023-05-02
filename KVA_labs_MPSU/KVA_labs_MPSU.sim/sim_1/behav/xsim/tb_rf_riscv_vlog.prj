@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../KVA_labs_MPSU.srcs/sources_1/new" \
+"../../../../KVA_labs_MPSU.srcs/sources_1/new/rf_riscv.v" \
+"../../../../KVA_labs_MPSU.srcs/sim_1/new/tb_rf_riscv.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
